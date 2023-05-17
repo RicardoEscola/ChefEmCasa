@@ -1,6 +1,7 @@
 # TRABALHO DE PI:  Título do Trabalho
 Trabalho desenvolvido durante a disciplina de Banco de Dados do Integrado
 
+
 # Sumário
 
 ### 1. COMPONENTES<br>
@@ -27,8 +28,8 @@ Descrição textual das regras de negócio definidas como um subconjunto do mund
 a) inclusão do PMC desenvolvido pelo grupo <br>
 
 #### 3.1. EAP - Estrutura Analítica do Projeto
-a) Incluír imagem da EAP (arquivos/EAP_Modelo.png)<br> 
-b) Dicinário da EAP (arquivos/EAP_Dicio1.png)<br> (arquivos/EAP_Dicio2.png)<br> (arquivos/EAP_Dicio3.png)<br>
+a) Incluír imagem da EAP ![ChefEmCasa](arquivos/EAP_Modelo.png)<br> 
+b) Dicinário da EAP ![ChefEmCasa](arquivos/EAP_Dicio1.png)<br> ![ChefEmCasa](arquivos/EAP_Dicio2.png)<br> ![ChefEmCasa](arquivos/EAP_Dicio3.png)<br>
 
 #### 3.2. Requisitos funcionais e não funcionais
 Incluir informações de: Identificador , Descrição e Prioridade
