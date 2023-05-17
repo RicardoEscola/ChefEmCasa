@@ -32,10 +32,8 @@ a) Incluír imagem da EAP ![ChefEmCasa](arquivos/EAP_Modelo.png)<br>
 b) Dicinário da EAP ![ChefEmCasa](arquivos/EAP_Dicio1.png)<br> ![ChefEmCasa](arquivos/EAP_Dicio2.png)<br> ![ChefEmCasa](arquivos/EAP_Dicio3.png)<br>
 
 #### 3.2. Requisitos funcionais e não funcionais
-Incluir informações de: Identificador , Descrição e Prioridade
-Exemplos:<br>
-a) <img src="https://raw.githubusercontent.com/discproint/template_projeto_integrador/main/arquivos/requisitos_funcionais.png" width="350" height="100" /> <br>
-b) <img src="https://raw.githubusercontent.com/discproint/template_projeto_integrador/main/arquivos/requisitos_nao_funcionais.png" width="350" height="190" /> <br>
+![ChefEmCasa](arquivos/Requisitos_funcionais.png)<br> 
+![ChefEmCasa](arquivos/Requisitos_n_funcionais.png) <br> ![ChefEmCasa](arquivos/Requisitos_n_funcionais2.png) <br>
 
 #### 3.3 Validação da Ideia.
 a) Link do formulário desenvolvido
