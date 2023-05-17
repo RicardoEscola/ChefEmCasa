@@ -27,7 +27,7 @@ Descrição textual das regras de negócio definidas como um subconjunto do mund
 a) inclusão do PMC desenvolvido pelo grupo <br>
 
 #### 3.1. EAP - Estrutura Analítica do Projeto
-a) Incluír imagem da EAP (arquivos/EAP - Modelo.png)<br> 
+a) Incluír imagem da EAP ![EAP_MODELO](arquivos/EAP - Modelo.png)<br> 
 b) Dicinário da EAP (arquivos/EAP - Dicio1.png)<br> (arquivos/EAP - Dicio2.png)<br> (arquivos/EAP - Dicio3.png)<br>
 
 #### 3.2. Requisitos funcionais e não funcionais
