@@ -5,8 +5,10 @@ Trabalho desenvolvido durante a disciplina de Banco de Dados do Integrado
 
 ### 1. COMPONENTES<br>
 Integrantes do grupo<br>
-primeiro_componente_do_grupo:email_primeiro_componente@dominio.com<br>
-segundo_componente_do_grupo:email_segundo_componente@dominio.com<br>
+Halisson Julio Lopes:email_primeiro_componente@dominio.com<br>
+Paulo Victor:paulovictoralves.contato@gmail.com<br>
+Pedro Antônio:naosei@gmail.com<br>
+Ricardo Leite Rodrigues:ricardoleiterodriguesbe@gmail.com<br>
 ...
 
 ### 2.MINIMUNDO<br>
