@@ -64,33 +64,46 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
     a) O sistema proposto poderá fornecer quais tipos de relatórios e informaçes? 
     b) Crie uma lista com os 5 principais relatórios que poderão ser obtidos por meio do sistema proposto!
     
-> A Empresa DevCom precisa inicialmente dos seguintes relatórios:
-* Relatório que informe quais são os gerentes de cada departamento incluindo as seguintes informações: número do departamento,  nome do departamento, e nome do gerente.
-* Relatório de empregados por projeto incluindo as seguintes informações: número do projeto, nome do projeto, rg do empregado, nome do empregado e quantidade de horas de trabalho do empregado alocadas ao projeto.
-* Relatório de empregados com dependentes incluindo as seguintes informações: rg do empregado, nome do empregado, nome do dependente, tipo de relação, data de nascimento do dependente e sexo do dependente.
-* Relatório com a quantidade de empregados por cada departamento incluindo as seguintes informações: nome do departamento, supervisor e quantidade de empregados alocados no departamento.
-* Relatório de supervisores e supervisionados incluindo as seguintes informações: nome do supervisor e nome do supervisionado.
- 
+> A Empresa Chef precisa inicialmente dos seguintes relatórios:
+* Relatório de quais são as receitas mais bem avaliadas pelos usuários.
+* Receitas com filtros escolhidos pelos usuários (pelas restrições ou pelas categorias).
+* Relatório sobre o perfil do usuário (quantidade de usuários que ele segue ou tem de seguidores).
+* Relátório sobre as receitas que o usuário enviou (quantas pessoas curtiram, quantas comentaram, quantas favoritaram).
+* Relatório de quem são os usuários normais mais seguidos (caso um usuário tenha reeitas bem avaliadas ele vira um chef).
+
  ### 6.MODELO CONCEITUAL<br>
-    A) Utilizar a Notação adequada (Preferencialmente utilizar o BR Modelo 3)
-    B) O mínimo de entidades do modelo conceitual pare este trabalho será igual a 4.
-        * informe quais são as 3 principais entidades do sistema em densenvolvimento
-      (se houverem mais de 3 entidades, pense na importância da entidade para o sistema)       
-    C) Principais fluxos de informação/entidades do sistema (mínimo 2). <br>Dica: normalmente estes fluxos estão associados as tabelas que conterão maior quantidade de dados 
-    D) Qualidade e Clareza
-        Garantir que a semântica dos atributos seja clara no esquema (nomes coerentes com os dados).
-        Criar o esquema de forma a garantir a redução de informação redundante, possibilidade de valores null, 
-        e tuplas falsas (Aplicar os conceitos de normalização abordados).   
-        
-![Alt text](https://github.com/discproint/template_projeto_integrador/blob/main/arquivos/concept_sample.png?raw=true "Modelo Conceitual")
+  
+![ChefEmCasa](arquivos/Modelo_Conceitual.png)
       
     
-#### 7 Descrição dos dados 
-    [objeto]: [descrição do objeto]
-    
-    EXEMPLO:
-    CLIENTE: Tabela que armazena as informações relativas ao cliente<br>
-    CPF: campo que armazena o número de Cadastro de Pessoa Física para cada cliente da empresa.<br>
+#### 7 Descrição dos dados <br> 
+PERFIL: Tabela que armazena as informações relativas ao peril<br>
+cod_perfil: campo que armazena o número de registro do perfil no banco.<br>
+nome: campo que armazena o nome do perfil.<br>
+email: campo que armazena o email do perfil.<br>
+senha: campo que armazena a senha do perfil.<br>
+dta_nasc: campo que armazena a data de nascimento do perfil.<br>
+tipo: campo que armazena o tipo do perfil.<br>
+
+RECEITA: Tabela que armazenas as informações das receitas<br>
+	cod_rec: campo que armazena o número de registro da receita no banco.<br>
+	nome: campo que armazena o nome da receita.<br>
+	temp_preparo: campo que armazena o tempo de preparo (em minutos) da receita.<br>
+	porcao: campo que armazena a quantidade de pessoas que dá para alimentar.<br>
+	dta_lanc: campo que armazena a data de lançamento da receita.<br>
+	status: campo que fala se a receita foi aceita ou não.<br>
+
+RESTRICAO: Tabela que armazenas as informações das restricoes<br>
+	cod_rest: campo que armazena o número de registro da restição no banco.<br>
+	restricao: informa qual a restrição<br>
+
+CATEGORIA: Tabela que armazenas as informações das categorias<br>
+	cod_cat: campo que armazena o número de registro da categoria no banco.<br>
+	restricao: informa qual a categoria<br>
+
+INGREDIENTE: Tabela que armazena as informações relativas aos ingredientes<br>
+	cod_ingrediente: campo que armazena o número de registro do ingrediente no banco.<br>
+	nome: informa qual é o ingrediente<br>
 
 ### 8	RASTREABILIDADE DOS ARTEFATOS<br>
         a) Historia de usuários vs protótipo (Histórias de Usuário e em qual tela do protótipo aquela HU está sendo realizada).
@@ -98,9 +111,7 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
         (modelos devem obrigatoriamente estar em conformidade de rastreabilidade)
 
 ### 9	MODELO LÓGICO<br>
-        a) inclusão do esquema lógico do banco de dados
-        b) verificação de correspondencia com o modelo conceitual 
-        (não serão aceitos modelos que não estejam em conformidade)
+![ChefEmCasa](arquivos/Modelo_Logico.png)
 
 ### 10	MODELO FÍSICO<br>
         a) inclusão das instruções de criacão das estruturas em SQL/DDL 
