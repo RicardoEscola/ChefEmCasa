@@ -39,11 +39,28 @@ a) Link do formulário desenvolvido
 b) Link para Relatório/Apresentação de resultados obtidos
 
 ### 4.Personas e Histórias de usuário<br>
-<img src="https://neilpatel.com/wp-content/uploads/2019/07/exemplo-carlos.png" Personas src="https://neilpatel.com/wp-content/uploads/2019/07/exemplo-carlos.png" width="500" height="500" /> <br>
 a) inclusão dos Persons desenvolvidos pelo grupo<br>
+1- <br>
+Chef Profissional <br>
+Nome: Ana Silva <br>
+Idade: 35 anos <br>
+Profissão: Chef de cozinha <br>
+Descrição: Ana é uma chef profissional renomada, com anos de experiência em culinária gourmet. Ela está sempre buscando novas receitas e técnicas culinárias para aprimorar suas habilidades. Ana precisa de um site que acelere uma ampla variedade de receitas sofisticadas, ingredientes de alta qualidade e instruções específicas para aprendê-la a criar pratos inovadores.<br>
+
+2-<br>
+Estudante Universitária <br>
+Nome: Marina Oliveira <br>
+Idade: 20 anos <br>
+Profissão: Estudante universitária <br>
+Descrição: Marina é uma estudante universitária ocupada, que está constantemente equilibrando seus estudos com outras responsabilidades. Ela precisa de receitas rápidas e acessíveis, que podem ser preparadas com ingredientes simples e disponíveis em um orçamento limitado. Marina está em busca de um site de receitas que gosta de opções saudáveis ​​e práticas para o seu estilo de vida agitado.<br>
 <br>
-<img src="https://miro.medium.com/max/1400/1*r5GVnOvqpMdxnGUYNRXqbg.png" UserStory src="https://miro.medium.com/max/1400/1*r5GVnOvqpMdxnGUYNRXqbg.png" width="500" height="300" /> <br>
-b) inclusão das Histórias de usuário desenvolvidas pelo grupo
+b) inclusão das Histórias de usuário desenvolvidas pelo grupo<br>
+1-<br>
+História de usuário: Como uma chef profissional, Ana precisa acessar um site de receitas que seja confiável e inspirada para seus pratos gourmet. Ela deseja encontrar receitas exclusivas, com ingredientes de alta qualidade e técnicas avançadas. Ana também procura por um site que possua uma comunidade ativa, onde ela possa compartilhar suas criações e trocar ideias com outros chefs.<br>
+<br>
+2-<br>
+História de usuário: Marina tem uma vida movimentada devido aos seus estudos e atividades extracurriculares. Ela precisa de um site de receitas que dê opções rápidas e fáceis de preparar, para que possa se alimentar de forma saudável mesmo com pouco tempo disponível. Marina também gostaria de encontrar dicas de refeições para emagrecer e sugestões para aproveitar ao máximo os ingredientes básicos que ela tem em casa.<br>
+
 <br>
 
 
@@ -55,15 +72,13 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
 ![Alt text](https://github.com/discproint/template_projeto_integrador/blob/main/arquivos/balsamiq.png?raw=true "Title")
 ![Arquivo PDF do Protótipo Balsamiq feito para Empresa Devcom](https://github.com/discproint/template_projeto_integrador/blob/main/arquivos/EmpresaDevcom.pdf?raw=true "Empresa Devcom")
 
-#### 5.1 PROTÓTIPO DO SISTEMA MOBILE
-
-#### 5.2 PROTÓTIPO DO SISTEMA WEB
+#### 5.1 PROTÓTIPO DO SISTEMA MOBILE <br>
+https://app.quant-ux.com/#/test.html?h=a2aa10aJ9AiqXUmfxAqY1GRvdOALyFry8XEWzhL4Phs213oDw0fw1E5Q4Ree&ln=en<br>
+#### 5.2 PROTÓTIPO DO SISTEMA WEB<br>
 
 #### 5.3 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM OS SISTEMA WEB/MOBILE PROPOSTOS?
-    a) O sistema proposto poderá fornecer quais tipos de relatórios e informaçes? 
-    b) Crie uma lista com os 5 principais relatórios que poderão ser obtidos por meio do sistema proposto!
     
-> A Empresa Chef precisa inicialmente dos seguintes relatórios:
+> A Empresa Chef em Casa precisa inicialmente dos seguintes relatórios:
 * Relatório de quais são as receitas mais bem avaliadas pelos usuários.
 * Receitas com filtros escolhidos pelos usuários (pelas restrições ou pelas categorias).
 * Relatório sobre o perfil do usuário (quantidade de usuários que ele segue ou tem de seguidores).
