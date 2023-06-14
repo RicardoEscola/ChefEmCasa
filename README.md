@@ -130,6 +130,174 @@ INGREDIENTE: Tabela que armazena as informações relativas aos ingredientes<br>
 ### 10	MODELO FÍSICO<br>
         a) inclusão das instruções de criacão das estruturas em SQL/DDL 
         (criação de tabelas, alterações, etc..) 
+	
+CREATE TABLE USUARIO (
+    cod_perfil SERIAL PRIMARY KEY,
+    nome VARCHAR(100),    
+    email VARCHAR(80),
+    senha VARCHAR(30),
+    dta_nasc DATE,
+    tipo VARCHAR(20),
+    img VARCHAR(255)
+);
+
+CREATE TABLE RESTRICAO (
+    cod_rest SERIAL PRIMARY KEY,
+    restricao VARCHAR(50)
+);
+
+CREATE TABLE RECEITA (
+    cod_rec SERIAL PRIMARY KEY,
+    nome VARCHAR(100),
+    temp_preparo INTEGER,
+    porcao INTEGER,
+    dta_lanc DATE,
+    denuncia VARCHAR(15),
+    FK_USUARIO_cod_perfil INTEGER
+);
+
+CREATE TABLE INGREDIENTE (
+    cod_ingrediente SERIAL PRIMARY KEY,
+    nome VARCHAR(50),
+    img VARCHAR(255)
+);
+
+CREATE TABLE MODO_PREPARO (
+    cod_preparo SERIAL PRIMARY KEY,
+    ordem INTEGER,
+    desc_da_ordem VARCHAR(255),
+    FK_RECEITA_cod_rec INTEGER
+);
+
+CREATE TABLE CATEGORIA (
+    cod_cat SERIAL PRIMARY KEY,
+    categoria VARCHAR(50)
+);
+
+CREATE TABLE MIDIA (
+    cod_midia SERIAL PRIMARY KEY,
+    url VARCHAR(255),
+    FK_RECEITA_cod_rec INTEGER
+);
+
+CREATE TABLE receita_restricao (
+    fk_RECEITA_cod_rec INTEGER,
+    fk_RESTRICAO_cod_rest INTEGER
+);
+
+CREATE TABLE receita_ingrediente (
+    fk_RECEITA_cod_rec INTEGER,
+    fk_INGREDIENTE_cod_ingrediente INTEGER,
+    fk_MEDIDA_cod_medida_ INTEGER,
+    qtd INTEGER
+);
+
+CREATE TABLE MEDIDA (
+    cod_medida SERIAL NOT NULL PRIMARY KEY,
+    medida varchar(80)
+);
+
+CREATE TABLE Comenta (
+    fk_USUARIO_cod_perfil INTEGER,
+    fk_RECEITA_cod_rec INTEGER,
+    comentario VARCHAR(255),
+    data DATE
+);
+
+CREATE TABLE Curtir (
+    fk_USUARIO_cod_perfil INTEGER,
+    fk_RECEITA_cod_rec INTEGER
+);
+
+CREATE TABLE receita_categoria (
+    fk_RECEITA_cod_rec INTEGER,
+    fk_CATEGORIA_cod_cat INTEGER
+);
+
+CREATE TABLE Visualiza (
+    fk_USUARIO_cod_perfil INTEGER,
+    fk_RECEITA_cod_rec INTEGER
+);
+ 
+ALTER TABLE RECEITA ADD CONSTRAINT FK_RECEITA_2
+    FOREIGN KEY (FK_USUARIO_cod_perfil)
+    REFERENCES USUARIO (cod_perfil)
+    ON DELETE CASCADE;
+ 
+ALTER TABLE MODO_PREPARO ADD CONSTRAINT FK_MODO_PREPARO_2
+    FOREIGN KEY (FK_RECEITA_cod_rec)
+    REFERENCES RECEITA (cod_rec)
+    ON DELETE RESTRICT;
+ 
+ALTER TABLE MIDIA ADD CONSTRAINT FK_MIDIA_2
+    FOREIGN KEY (FK_RECEITA_cod_rec)
+    REFERENCES RECEITA (cod_rec)
+    ON DELETE RESTRICT;
+ 
+ALTER TABLE receita_restricao ADD CONSTRAINT FK_receita_restricao_1
+    FOREIGN KEY (fk_RECEITA_cod_rec)
+    REFERENCES RECEITA (cod_rec)
+    ON DELETE SET NULL;
+ 
+ALTER TABLE receita_restricao ADD CONSTRAINT FK_receita_restricao_2
+    FOREIGN KEY (fk_RESTRICAO_cod_rest)
+    REFERENCES RESTRICAO (cod_rest)
+    ON DELETE SET NULL;
+ 
+ALTER TABLE receita_ingrediente ADD CONSTRAINT FK_receita_ingrediente_1
+    FOREIGN KEY (fk_RECEITA_cod_rec)
+    REFERENCES RECEITA (cod_rec)
+    ON DELETE RESTRICT;
+ 
+ALTER TABLE receita_ingrediente ADD CONSTRAINT FK_receita_ingrediente_2
+    FOREIGN KEY (fk_INGREDIENTE_cod_ingrediente)
+    REFERENCES INGREDIENTE (cod_ingrediente)
+    ON DELETE RESTRICT;
+ 
+ALTER TABLE receita_ingrediente ADD CONSTRAINT FK_receita_ingrediente_3
+    FOREIGN KEY (fk_MEDIDA_cod_medida_)
+    REFERENCES MEDIDA (cod_medida)
+    ON DELETE NO ACTION;
+ 
+ALTER TABLE Comenta ADD CONSTRAINT FK_Comenta_1
+    FOREIGN KEY (fk_USUARIO_cod_perfil)
+    REFERENCES USUARIO (cod_perfil)
+    ON DELETE SET NULL;
+ 
+ALTER TABLE Comenta ADD CONSTRAINT FK_Comenta_2
+    FOREIGN KEY (fk_RECEITA_cod_rec)
+    REFERENCES RECEITA (cod_rec)
+    ON DELETE SET NULL;
+ 
+ALTER TABLE Curtir ADD CONSTRAINT FK_Curtir_1
+    FOREIGN KEY (fk_USUARIO_cod_perfil)
+    REFERENCES USUARIO (cod_perfil)
+    ON DELETE SET NULL;
+ 
+ALTER TABLE Curtir ADD CONSTRAINT FK_Curtir_2
+    FOREIGN KEY (fk_RECEITA_cod_rec)
+    REFERENCES RECEITA (cod_rec)
+    ON DELETE SET NULL;
+ 
+ALTER TABLE receita_categoria ADD CONSTRAINT FK_receita_categoria_1
+    FOREIGN KEY (fk_RECEITA_cod_rec)
+    REFERENCES RECEITA (cod_rec)
+    ON DELETE RESTRICT;
+ 
+ALTER TABLE receita_categoria ADD CONSTRAINT FK_receita_categoria_2
+    FOREIGN KEY (fk_CATEGORIA_cod_cat)
+    REFERENCES CATEGORIA (cod_cat)
+    ON DELETE RESTRICT;
+ 
+ALTER TABLE Visualiza ADD CONSTRAINT FK_Visualiza_1
+    FOREIGN KEY (fk_USUARIO_cod_perfil)
+    REFERENCES USUARIO (cod_perfil)
+    ON DELETE SET NULL;
+ 
+ALTER TABLE Visualiza ADD CONSTRAINT FK_Visualiza_2
+    FOREIGN KEY (fk_RECEITA_cod_rec)
+    REFERENCES RECEITA (cod_rec)
+    ON DELETE SET NULL;
         
        
 ### 11	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
