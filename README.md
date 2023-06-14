@@ -1,4 +1,4 @@
-# TRABALHO DE PI:  Título do Trabalho
+# SISTEMA CHEF EM CASA
 Trabalho desenvolvido durante a disciplina de Banco de Dados do Integrado
 
 
