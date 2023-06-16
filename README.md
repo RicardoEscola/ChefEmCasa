@@ -35,7 +35,7 @@ b) Dicinário da EAP ![ChefEmCasa](arquivos/EAP_Dicio1.png)<br> ![ChefEmCasa](ar
 ![ChefEmCasa](arquivos/Requisitos_n_funcionais.png) <br> ![ChefEmCasa](arquivos/Requisitos_n_funcionais2.png) <br>
 
 #### 3.3 Validação da Ideia.
-a) Link do formulário desenvolvido
+a) Link do formulário desenvolvido<br>
 b) Link para Relatório/Apresentação de resultados obtidos
 
 ### 4.Personas e Histórias de usuário<br>
@@ -52,7 +52,7 @@ Estudante Universitária <br>
 Nome: Marina Oliveira <br>
 Idade: 20 anos <br>
 Profissão: Estudante universitária <br>
-Descrição: Marina é uma estudante universitária ocupada, que está constantemente equilibrando seus estudos com outras responsabilidades. Ela precisa de receitas rápidas e acessíveis, que podem ser preparadas com ingredientes simples e disponíveis em um orçamento limitado. Marina está em busca de um site de receitas que gosta de opções saudáveis ​​e práticas para o seu estilo de vida agitado.<br>
+Descrição: Marina é uma estudante universitária ocupada, que está constantemente equilibrando seus estudos com outras responsabilidades. Ela precisa de receitas rápidas e acessíveis, que podem ser preparadas com ingredientes simples e disponíveis em um orçamento limitado. Marina está em busca de um site de receitas que gosta de opções saudáveis e práticas para o seu estilo de vida agitado.<br>
 <br>
 b) inclusão das Histórias de usuário desenvolvidas pelo grupo<br>
 1-<br>
@@ -81,9 +81,9 @@ https://app.quant-ux.com/#/test.html?h=a2aa10aJ9AiqXUmfxAqY1GRvdOALyFry8XEWzhL4P
 > A Empresa Chef em Casa precisa inicialmente dos seguintes relatórios:
 * Relatório de quais são as receitas mais bem avaliadas pelos usuários.
 * Receitas com filtros escolhidos pelos usuários (pelas restrições ou pelas categorias).
-* Relatório sobre o perfil do usuário (quantidade de usuários que ele segue ou tem de seguidores).
-* Relátório sobre as receitas que o usuário enviou (quantas pessoas curtiram, quantas comentaram, quantas favoritaram).
-* Relatório de quem são os usuários normais mais seguidos (caso um usuário tenha reeitas bem avaliadas ele vira um chef).
+* Relatório sobre o perfil do usuário (quantidade de curtidas ele tem em suas receitas).
+* Relátório dos 5 ingredientes mais utilizados.
+* Relatório dos usuarios e quantas receitas eles mandaram.
 
  ### 6.MODELO CONCEITUAL<br>
   
@@ -132,9 +132,16 @@ url: Campo que guarda o endereço da imagem.<br>
 <br>
 
 ### 8	RASTREABILIDADE DOS ARTEFATOS<br>
-        a) Historia de usuários vs protótipo (Histórias de Usuário e em qual tela do protótipo aquela HU está sendo realizada).
-        b) Protótipo vs Modelo conceitual (Histórias de Usuário e em quais tabelas aquele dado está sendo registrado).
-        (modelos devem obrigatoriamente estar em conformidade de rastreabilidade)
+        a) Historia de usuários vs protótipo (Histórias de Usuário e em qual tela do protótipo aquela HU está sendo realizada).<br>
+	
+1- Tela principal, onde aparece as novas receitas, mas também no filtro, já que ela deseja certas receitas gourmet <br>
+2- A tela do filtro, filtrando as receitas por saudáveis e rápidas, pela sua vida agitada de universitária <br>
+<br>
+	
+        b) Protótipo vs Modelo conceitual (Histórias de Usuário e em quais tabelas aquele dado está sendo registrado).<br>
+        (modelos devem obrigatoriamente estar em conformidade de rastreabilidade)<br>
+	
+Ambas estão na relação da tabela receita e categoria.
 
 ### 9	MODELO LÓGICO<br>
 ![ChefEmCasa](arquivos/Modelo_Logico.png)
