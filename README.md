@@ -910,7 +910,12 @@ insert into comenta (fk_usuario_cod_perfil,fk_receita_cod_rec,comentario,data) v
  ### 13 Gráficos, relatórios, integração com Linguagem de programação e outras solicitações.<br>
      OBS: Observe as instruções relacionadas a cada uma das atividades abaixo.<br>
  #### 13.1	Integração com Linguagem de programação; <br>
- #### 13.2	Receitas mais curtidas![image](https://github.com/RicardoEscola/Sistema-Chef-Em-Casa/assets/84408596/3b4d2fac-5669-49fb-9b46-0a8b3dc7436e)
+ #### 13.2	Gráficos e relatórios pertinentes <br>
+ 
+ Receitas mais curtidas![image](https://github.com/RicardoEscola/Sistema-Chef-Em-Casa/assets/84408596/3b4d2fac-5669-49fb-9b46-0a8b3dc7436e)
+<br>
+
+Quantas receitas cada usuário enviou![image](https://github.com/RicardoEscola/Sistema-Chef-Em-Casa/assets/84408596/55f07432-b1c5-4a65-9fdf-18ba5cbfd482)
 <br>
  
  ### 14 Slides e Apresentação em vídeo. <br>
