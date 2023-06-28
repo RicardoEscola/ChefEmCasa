@@ -6,9 +6,9 @@ Trabalho desenvolvido durante a disciplina de Banco de Dados do Integrado
 
 ### 1. COMPONENTES<br>
 Integrantes do grupo<br>
-Halisson Julio Lopes:email_primeiro_componente@dominio.com<br>
+Halisson Julio Lopes:halissonjulio@gmail.com<br>
 Paulo Victor:paulovictoralves.contato@gmail.com<br>
-Pedro Antônio:naosei@gmail.com<br>
+Pedro Antônio:pedroantoniocec@gmail.com<br>
 Ricardo Leite Rodrigues:ricardoleiterodriguesbe@gmail.com<br>
 
 ### 2.MINIMUNDO<br>
